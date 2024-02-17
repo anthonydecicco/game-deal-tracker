@@ -2,9 +2,6 @@ import { filterOptions } from "../utilities/filter-options"
 
 export default function FilterBar({location, filter, isFiltering, handleFilter, handleClear}) {
 
-
-    //This sets the state of the filter to an empty string, deselecting the current radio button
-
     return (
         <>
             {!location.pathname.includes('game/') && !location.pathname.includes(`games/`) && (

@@ -63,6 +63,7 @@ export default function Layout() {
         setFilter(e.target.value);
         setIsLoading(true);
     }
+    //This sets the state of the filter to an empty string, deselecting the current radio button
 
     function handleClear() {
         if (filter !== "") {
