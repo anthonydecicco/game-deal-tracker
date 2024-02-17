@@ -7,11 +7,8 @@ export default function SearchBar({ searchInputRef, isSearching, setSearchQuery,
         e.preventDefault();
         if (searchQuery) {
             navigate(`/games/${searchQuery}`);
-            // Have to set "use" hooks in the body of the component
-            // You can't use navigate in the rendered portion because it is equal to useNavigate
         }
     }
-    //I still do not fully understand the above, go back to review
 
     return (
         <div className={`search-bar-container ${isSearching ? "" : "hide"}`}>
